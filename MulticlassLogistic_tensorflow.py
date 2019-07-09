@@ -9,7 +9,7 @@ n = 100 #num data
 N = n*K #sum
 
 X1 = np.random.randn(n, M) + np.array([0,10])
-X2 = np.random.randn(n, M) + np.array([10,10])
+X2 = np.random.randn(n, M) + np.array([5,5])
 X3 = np.random.randn(n, M) + np.array([10, 0])
 Y1 = np.array([[1,0,0] for i in range(n)])
 Y2 = np.array([[0,1,0] for i in range(n)])
@@ -61,3 +61,5 @@ print('classified:')
 print(classified)
 print('output probability:')
 print(prob)
+
+print(sess.run(b),sess.run(w))
